@@ -7,7 +7,10 @@ LOCAL_SRC_FILES:= \
 	rild.c
 
 
+#libbinder is needed because the libril from korean-v10t
+#needs a symbol from there (which was previously in libutils)
 LOCAL_SHARED_LIBRARIES := \
+	libbinder \
 	libcutils \
 	libril
 
