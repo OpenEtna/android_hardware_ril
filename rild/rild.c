@@ -236,7 +236,8 @@ int main(int argc, char **argv)
     }
 OpenLib:
 #endif
-    switchUser();
+    //reenable after we fixed the permissions of the devices which libril does open
+    //switchUser();
 
     dlHandle = dlopen(rilLibPath, RTLD_NOW);
 
